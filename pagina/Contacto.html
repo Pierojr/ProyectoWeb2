@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto - Krusty Burger</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333; 
+        }
+
+        header {
+            background-color: #ff6b01;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff6b01;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6b01; 
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff9239; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Krusty Burger</h1>
+</header>
+
+<nav style="background-color: #5e5858; text-align: center; padding: 10px 0;">
+    <ul style="list-style: none; padding: 0; margin: 0;">
+        <li style="display: inline-block; margin-right: 10px;"><a href="index.html" style="color: rgb(255, 82, 3); text-decoration: none; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease; background-color: #fff; display: block;">Pagina Principal</a></li>
+    </ul>
+</nav>
+
+
+
+
+<div class="container">
+    <h2>Contacto</h2>
+    <form action="enviar_formulario.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+</body>
+</html>

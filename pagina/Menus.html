@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menús</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333; 
+        }
+        nav {
+            background-color: #ff6b01; 
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            display: inline;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 5px;
+            background-color: #5e5858;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav a:hover {
+            background-color: #ff6f00;
+        }
+        .menu-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .menu-item {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .menu-item-info {
+            flex-grow: 1;
+        }
+        .menu-item h3 {
+            margin-top: 0;
+        }
+        .menu-item p {
+            margin: 5px 0;
+        }
+        .menu-item button {
+            background-color: #ff6b01;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .menu-item button:hover {
+            background-color: #ff7e00;
+        }
+    </style>
+</head>
+<body>
+    <nav style="background-color: #5e5858; text-align: center; padding: 10px 0;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display: inline-block; margin-right: 10px;"><a href="InicioSesion.html" style="color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease;">Inicio Sesión</a></li>
+            <li style="display: inline-block; margin-right: 10px;"><a href="registro.html" style="color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease;">Registro</a></li>
+            <li style="display: inline-block; margin-right: 10px;"><a href="ListaUsuarios.html" style="color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease;">Lista Usuarios</a></li>
+            <li style="display: inline-block; margin-right: 10px;"><a href="Carrito.html" style="color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease;">Carrito</a></li>
+            <li style="display: inline-block; margin-right: 10px;"><a href="Contacto.html" style="color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease;">Contacto</a></li>
+            <li style="display: inline-block; margin-right: 10px;"><a href="index.html" style="color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease;">Página Principal</a></li>
+            <li style="display: inline-block; margin-right: 10px;"><a href="Menus.html" style="color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease;">Menús</a></li>
+            <li style="display: inline-block; margin-right: 10px;"><a href="MetodoPago.html" style="color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease;">Método de Pago</a></li>
+            <li style="display: inline-block; margin-right: 10px;"><a href="imagen.html" style="color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease;">Imagen</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <div class="menu-container">
+        <div class="menu-item" id="menu1">
+            <img src="img/png-transparent-tazos-the-simpsons-season-10-milk-caps-hamburger-pin-bowl-of-milk-food-orange-pin.png" alt="Hamburguesa Clásica">
+            <div class="menu-item-info">
+                <h3>Hamburguesa Clásica</h3>
+                <p>Descripción: Una deliciosa hamburguesa con carne de res, lechuga, tomate y salsa especial.</p>
+                <p>Precio: $5.99</p>
+            </div>
+            <button>Agregar al Carrito</button>
+        </div>
+
+        <div class="menu-item" id="menu2">
+            <img src="img/png-clipart-fries-fries.png" alt="Patatas Fritas">
+            <div class="menu-item-info">
+                <h3>Patatas Fritas</h3>
+                <p>Descripción: Patatas fritas crujientes y doradas, perfectas como acompañamiento para tu hamburguesa.</p>
+                <p>Precio: $2.49</p>
+            </div>
+            <button>Agregar al Carrito</button>
+        </div>
+    </div>
+
+    <script>
+   
+        function agregarAlCarrito(nombre, descripcion, precio) {
+
+            var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+      
+            cartItems.push({
+                name: nombre,
+                description: descripcion,
+                price: parseFloat(precio)
+            });
+
+    
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+        }
+
+    
+        var botonesAgregar = document.querySelectorAll('.menu-item button');
+        botonesAgregar.forEach(function(boton) {
+            boton.addEventListener('click', function() {
+            
+                var menu = this.parentElement;
+                var nombre = menu.querySelector('h3').innerText;
+                var descripcion = menu.querySelector('p:nth-of-type(1)').innerText;
+                var precio = menu.querySelector('p:nth-of-type(2)').innerText.split(' ')[1];
+
+             
+                agregarAlCarrito(nombre, descripcion, precio);
+                alert('¡El menú se agregó al carrito!');
+            });
+        });
+    </script>
+</body>
+</html>
